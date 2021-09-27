@@ -34,8 +34,8 @@ jobs:
           badges: |
             [
               {
-                "badge": "https://img.shields.io/github/license/${{ repo_owner }}/${{ repo_name }}?style=flat-square",
+                "badge": "https://img.shields.io/github/license/${{ env.repo_owner }}/${{ env.repo_name }}?style=flat-square",
                 "alt": "MIT License",
-                "link": "${{ repo_url }}/blob/master/LICENSE"
+                "link": "${{ env.repo_url }}/blob/master/LICENSE"
               }
             ]
