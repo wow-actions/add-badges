@@ -1,0 +1,41 @@
+name: Add Badges
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚧　Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: ⤵️　Checkout
+        uses: actions/checkout@v2
+
+      - name: 🚧　Install
+        run: yarn install
+
+      - name: 📦　Build
+        run: yarn build
+      - name: 🔑　Generate Token
+        uses: wow-actions/use-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          env_name: bot_token
+      - name: 🎯　Badges
+        uses: ./
+        env:
+          repo_url: ${{ github.event.repository.html_url }}
+          repo_name: ${{ github.event.repository.name }}
+          repo_owner: ${{ github.event.repository.owner.login }}
+        with:
+          GITHUB_TOKEN: ${{ env.bot_token }}
+          center: true
+          badges: |
+            [
+              {
+                "badge": "https://img.shields.io/github/license/${{ repo_owner }}/${{ repo_name }}?style=flat-square",
+                "alt": "MIT License",
+                "link": "${{ repo_url }}/blob/master/LICENSE"
+              }
+            ]

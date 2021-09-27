@@ -1,0 +1,36 @@
+name: Add Badges
+description: Automatically add badges to README.md for your repository
+author: bubkoo <bubkoo.wy@gmail.com>
+inputs:
+  GITHUB_TOKEN:
+    description: Your GitHub token for authentication.
+    required: true
+  badges:
+    description: The badges to add with JSON format
+    required: false
+  path:
+    description: Path and file name to add badges
+    required: false
+    default: README.md
+  center:
+    description: Should center align the badges
+    required: false
+    default: false
+  commit_message:
+    description: Commit message of the github action.
+    required: false
+    default: 'docs: add badges [skip ci]'
+  opening_comment:
+    description: Opening comment
+    required: false
+    default: '<!-- [START BADGES] -->'
+  closing_comment:
+    description: Closing comment
+    required: false
+    default: '<!-- [END BADGES] -->'
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: tag
+  color: green
