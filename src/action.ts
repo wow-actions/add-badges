@@ -24,15 +24,13 @@ function detect(
   let endIndex = -1
   let hasStart = false
   let hasEnd = false
-  const openingRegex = new RegExp(openingComment)
-  const closingRegex = new RegExp(closingComment)
 
   for (let i = 0; i < lines.length; i += 1) {
     const line = lines[i]
-    if (!hasStart && openingRegex.test(line)) {
+    if (!hasStart && line.includes(openingComment)) {
       startIndex = i
       hasStart = true
-    } else if (!hasEnd && closingRegex.test(line)) {
+    } else if (!hasEnd && line.includes(closingComment)) {
       endIndex = i
       hasEnd = true
     }
