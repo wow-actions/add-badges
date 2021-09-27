@@ -116,8 +116,8 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ env.bot_token }}
           center: true
-          opening_comment: '<!-- [START BADGES 1] -->'
-          closing_comment: '<!-- [END BADGES 1] -->'
+          opening_comment: '<!-- [START BADGES 2] -->'
+          closing_comment: '<!-- [END BADGES 2] -->'
           badges: |
             [
               [

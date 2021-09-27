@@ -19,7 +19,22 @@
 
 ## Usage
 
-Create a workflow file such as `.github/workflows/add-badges.yml` in your repository:
+Create a workflow file such as `.github/workflows/add-badges.yml` in your repository.
+
+<!-- [START BADGES 1] -->
+<!-- Please keep comment here to allow auto update -->
+<p align="center">
+  <a href="https://github.com/wow-actions/add-badges/blob/master/LICENSE"><img src="https://img.shields.io/github/license/wow-actions/add-badges?style=flat-square" alt="MIT License" /></a>
+  <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square" alt="Language" /></a>
+  <a href="https://github.com/wow-actions/add-badges/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/marketplace/actions/add-badges"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6" alt="website" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/wow-actions/add-badges/actions/workflows/release.yml"><img src="https://img.shields.io/github/workflow/status/wow-actions/add-badges/Release/master?logo=github&style=flat-square" alt="build" /></a>
+  <a href="https://lgtm.com/projects/g/wow-actions/add-badges/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/wow-actions/add-badges.svg?logo=lgtm&style=flat-square" alt="Language grade: JavaScript" /></a>
+</p>
+<!-- [END BADGES 1] -->
 
 ```yml
 name: Add Badges
@@ -73,22 +88,10 @@ jobs:
             ]
 ```
 
-<!-- [START BADGES 1] -->
-<!-- Please keep comment here to allow auto update -->
-<p align="center">
-  <a href="https://github.com/wow-actions/add-badges/blob/master/LICENSE"><img src="https://img.shields.io/github/license/wow-actions/add-badges?style=flat-square" alt="MIT License" /></a>
-  <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square" alt="Language" /></a>
-  <a href="https://github.com/wow-actions/add-badges/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
-  <a href="https://github.com/marketplace/actions/add-badges"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6" alt="website" /></a>
-</p>
+Adding multi-line badges with nested array.
 
-<p align="center">
-  <a href="https://github.com/wow-actions/add-badges/actions/workflows/release.yml"><img src="https://img.shields.io/github/workflow/status/wow-actions/add-badges/Release/master?logo=github&style=flat-square" alt="build" /></a>
-  <a href="https://lgtm.com/projects/g/wow-actions/add-badges/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/wow-actions/add-badges.svg?logo=lgtm&style=flat-square" alt="Language grade: JavaScript" /></a>
-</p>
-<!-- [END BADGES 1] -->
-
-Adding multi-line badges with nested array:
+<!-- [START BADGES 2] -->
+<!-- [END BADGES 2] -->
 
 ```yml
 name: Add Badges
@@ -146,9 +149,6 @@ jobs:
               ]
             ]
 ```
-
-<!-- [START BADGES 2] -->
-<!-- [END BADGES 2] -->
 
 ## Inputs
 
