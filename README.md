@@ -6,6 +6,10 @@
 </p>
 
 <!-- [START BADGES] -->
+<!-- Please keep comment here to allow auto update -->
+<p align="center">
+  <a href="https://github.com/wow-actions/add-badges/blob/master/LICENSE"><img src="https://img.shields.io/github/license/wow-actions/add-badges?style=flat-square" alt="MIT License" /></a>
+</p>
 <!-- [END BADGES] -->
 
 ## Usage
