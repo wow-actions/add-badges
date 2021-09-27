@@ -90,10 +90,22 @@ export async function run() {
       return
     }
 
+    core.debug(JSON.stringify(detection, null, 2))
+
     const { startIndex, endIndex } = detection
     const dropCount = endIndex - startIndex + 1
     const rendered = Badge.render(badges, options.center)
-    const content = lines.splice(startIndex, dropCount, rendered).join('\n')
+
+    lines.splice(
+      startIndex,
+      dropCount,
+      options.openingComment,
+      '<!-- Please keep comment here to allow auto update -->',
+      rendered,
+      options.closingComment,
+    )
+
+    const content = lines.join('\n')
 
     if (oldContent !== content) {
       await octokit.rest.repos.createOrUpdateFileContents({
