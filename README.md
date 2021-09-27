@@ -90,7 +90,7 @@ jobs:
             ]
 ```
 
-Adding multi-line badges with nested array.
+We also can add multi-line badges with nested array.
 
 <!-- [START BADGES 2] -->
 <!-- Please keep comment here to allow auto update -->
