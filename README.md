@@ -1,7 +1,7 @@
 <h1 align="center">Add Badges</h1>
 <p align="center">
   <strong>
-    Automatically add badges to <code>README.md</code> for your repository
+    Automatically add badges from <a href="https://shields.io">shield.io</a> to <code>README.md</code> for your repository
   </strong>
 </p>
 
