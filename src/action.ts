@@ -113,6 +113,10 @@ export async function run() {
         path: options.path,
         content: Buffer.from(content).toString('base64'),
         message: options.commitMessage,
+        committer: {
+          name: options.committerName,
+          email: options.committerEmail,
+        },
         sha: res ? (res.data as any).sha : undefined,
       })
       core.info(`Badges updated`)

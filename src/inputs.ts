@@ -15,6 +15,8 @@ export namespace Inputs {
       path: core.getInput('path') || 'README.md',
       commitMessage:
         core.getInput('commit_message') || 'docs: update badges [skip ci]',
+      committerName: core.getInput('committer_name'),
+      committerEmail: core.getInput('committer_email'),
       openingComment:
         core.getInput('opening_comment') || '<!-- [START BADGES] -->',
       closingComment:
