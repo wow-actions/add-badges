@@ -1,7 +1,7 @@
 {
   "name": "add-badges",
   "description": "Automatically add badges to README.md for your repository",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "files": [
     "dist",
