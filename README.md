@@ -30,12 +30,9 @@
 
 <!-- [START BADGES 1] -->
 <!-- Please keep comment here to allow auto update -->
-[![MIT License](https://img.shields.io/github/license/wow-actions/add-badges?style=flat-square)](https://github.com/wow-actions/add-badges/blob/master/LICENSE)
-[![Language](https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square)](https://www.typescriptlang.org)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](https://github.com/wow-actions/add-badges/pulls)
-[![website](https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6)](https://github.com/marketplace/actions/add-badges)
-[![build](https://img.shields.io/github/workflow/status/wow-actions/add-badges/Release/master?logo=github&style=flat-square)](https://github.com/wow-actions/add-badges/actions/workflows/release.yml)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/wow-actions/add-badges.svg?logo=lgtm&style=flat-square)](https://lgtm.com/projects/g/wow-actions/add-badges/context:javascript)
+
+[![MIT License](https://img.shields.io/github/license/wow-actions/add-badges?style=flat-square)](https://github.com/wow-actions/add-badges/blob/master/LICENSE) [![Language](https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square)](https://www.typescriptlang.org) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](https://github.com/wow-actions/add-badges/pulls) [![website](https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6)](https://github.com/marketplace/actions/add-badges) [![build](https://img.shields.io/github/workflow/status/wow-actions/add-badges/Release/master?logo=github&style=flat-square)](https://github.com/wow-actions/add-badges/actions/workflows/release.yml) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/wow-actions/add-badges.svg?logo=lgtm&style=flat-square)](https://lgtm.com/projects/g/wow-actions/add-badges/context:javascript)
+
 <!-- [END BADGES 1] -->
 
 ```yml
@@ -177,6 +174,8 @@ Various inputs are defined to let you configure the action:
 | `path` | The file path to add badges | `'README.md'` |
 | `center` | Should center align the badges or not | `false` |
 | `commit_message` | Commit message | `'docs: add badges [skip ci]'` |
+| `committer_name` | The name of the author or committer of the commit. | `'github-actions[bot]'` |
+| `committer_email` | The email of the author or committer of the commit. | `'github-actions[bot]@users.noreply.github.com'` |
 | `opening_comment` | The comment to match the start line of badges section | `'<!-- [START BADGES] -->'` |
 | `closing_comment` | The comment to match the end line of badges section | `'<!-- [END BADGES] -->'` |
 

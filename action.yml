@@ -20,6 +20,14 @@ inputs:
     description: Commit message of the github action.
     required: false
     default: 'docs: add badges [skip ci]'
+  committer_name:
+    required: false
+    description: The name of the author or committer of the commit.
+    default: 'github-actions[bot]'
+  committer_email:
+    required: false
+    description: The email of the author or committer of the commit.
+    default: 'github-actions[bot]@users.noreply.github.com'
   opening_comment:
     description: Opening comment
     required: false
