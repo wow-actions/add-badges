@@ -102,7 +102,7 @@ We also can add multi-line badges with nested array.
 </p>
 
 <p align="center">
-  <a href="https://github.com/wow-actions/add-badges/actions/workflows/release.yml"><img src="https://img.shields.io/github/workflow/status/wow-actions/add-badges/Release/master?logo=github&style=flat-square" alt="build" /></a>
+  <a href="https://github.com/wow-actions/add-badges/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/wow-actions/add-badges/release.yml?branch=master&logo=github&style=flat-square" alt="build" /></a>
   <a href="https://lgtm.com/projects/g/wow-actions/add-badges/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/wow-actions/add-badges.svg?logo=lgtm&style=flat-square" alt="Language grade: JavaScript" /></a>
 </p>
 <!-- [END BADGES 2] -->
