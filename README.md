@@ -34,7 +34,7 @@
 [![Language](https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square)](https://www.typescriptlang.org)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](https://github.com/wow-actions/add-badges/pulls)
 [![website](https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6)](https://github.com/marketplace/actions/add-badges)
-[![build](https://img.shields.io/github/workflow/status/wow-actions/add-badges/Release/master?logo=github&style=flat-square)](https://github.com/wow-actions/add-badges/actions/workflows/release.yml)
+[![build](https://img.shields.io/github/actions/workflow/status/wow-actions/add-badges/release.yml?branch=master&logo=github&style=flat-square)](https://github.com/wow-actions/add-badges/actions/workflows/release.yml)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/wow-actions/add-badges.svg?logo=lgtm&style=flat-square)](https://lgtm.com/projects/g/wow-actions/add-badges/context:javascript)
 <!-- [END BADGES 1] -->
 
