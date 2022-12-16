@@ -8,12 +8,11 @@
 <!-- [START BADGES] -->
 <!-- Please keep comment here to allow auto update -->
 <p align="center">
+  <a href="https://github.com/wow-actions/add-badges/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/wow-actions/add-badges/release.yml?branch=master&logo=github&style=flat-square" alt="build" /></a>
   <a href="https://github.com/wow-actions/add-badges/blob/master/LICENSE"><img src="https://img.shields.io/github/license/wow-actions/add-badges?style=flat-square" alt="MIT License" /></a>
   <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square" alt="Language" /></a>
   <a href="https://github.com/wow-actions/add-badges/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
   <a href="https://github.com/marketplace/actions/add-badges"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=marketplace&color=0076D6&style=flat-square&logo=google-chrome&logoColor=0076D6" alt="website" /></a>
-  <a href="https://github.com/wow-actions/add-badges/actions/workflows/release.yml"><img src="https://img.shields.io/github/workflow/status/wow-actions/add-badges/Release/master?logo=github&style=flat-square" alt="build" /></a>
-  <a href="https://lgtm.com/projects/g/wow-actions/add-badges/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/wow-actions/add-badges.svg?logo=lgtm&style=flat-square" alt="Language grade: JavaScript" /></a>
 </p>
 <!-- [END BADGES] -->
 
@@ -170,17 +169,17 @@ Various inputs are defined to let you configure the action:
 
 > Note: [Workflow command and parameter names are not case-sensitive](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-commands-for-github-actions#about-workflow-commands).
 
-| Name | Description | Default |
-| --- | --- | --- |
-| `GITHUB_TOKEN` | The GitHub token for authentication | N/A |
-| `badges` | Badges to add | N/A |
-| `path` | The file path to add badges | `'README.md'` |
-| `center` | Should center align the badges or not | `false` |
-| `commit_message` | Commit message | `'docs: add badges [skip ci]'` |
-| `committer_name` | The name of the author or committer of the commit. | `'github-actions[bot]'` |
-| `committer_email` | The email of the author or committer of the commit. | `'github-actions[bot]@users.noreply.github.com'` |
-| `opening_comment` | The comment to match the start line of badges section | `'<!-- [START BADGES] -->'` |
-| `closing_comment` | The comment to match the end line of badges section | `'<!-- [END BADGES] -->'` |
+| Name              | Description                                           | Default                                          |
+|-------------------|-------------------------------------------------------|--------------------------------------------------|
+| `GITHUB_TOKEN`    | The GitHub token for authentication                   | N/A                                              |
+| `badges`          | Badges to add                                         | N/A                                              |
+| `path`            | The file path to add badges                           | `'README.md'`                                    |
+| `center`          | Should center align the badges or not                 | `false`                                          |
+| `commit_message`  | Commit message                                        | `'docs: add badges [skip ci]'`                   |
+| `committer_name`  | The name of the author or committer of the commit.    | `'github-actions[bot]'`                          |
+| `committer_email` | The email of the author or committer of the commit.   | `'github-actions[bot]@users.noreply.github.com'` |
+| `opening_comment` | The comment to match the start line of badges section | `'<!-- [START BADGES] -->'`                      |
+| `closing_comment` | The comment to match the end line of badges section   | `'<!-- [END BADGES] -->'`                        |
 
 ## License
 

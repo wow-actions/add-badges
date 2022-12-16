@@ -54,7 +54,7 @@ jobs:
                 "link": "https://github.com/marketplace/actions/${{ env.repo_name }}"
               },
               {
-                "badge": "https://img.shields.io/github/workflow/status/${{ env.repo_owner }}/${{ env.repo_name }}/Release/master?logo=github&style=flat-square",
+                "badge": "https://img.shields.io/github/actions/workflow/status/${{ env.repo_owner }}/${{ env.repo_name }}/release.yml?branch=master&logo=github&style=flat-square",
                 "alt": "build",
                 "link": "${{ env.repo_url }}/actions/workflows/release.yml"
               },
@@ -97,7 +97,7 @@ jobs:
                 "link": "https://github.com/marketplace/actions/${{ env.repo_name }}"
               },
               {
-                "badge": "https://img.shields.io/github/workflow/status/${{ env.repo_owner }}/${{ env.repo_name }}/Release/master?logo=github&style=flat-square",
+                "badge": "https://img.shields.io/github/actions/workflow/status/${{ env.repo_owner }}/${{ env.repo_name }}/release.yml?branch=master&logo=github&style=flat-square",
                 "alt": "build",
                 "link": "${{ env.repo_url }}/actions/workflows/release.yml"
               },
@@ -144,7 +144,7 @@ jobs:
               ],
               [
                 {
-                  "badge": "https://img.shields.io/github/workflow/status/${{ env.repo_owner }}/${{ env.repo_name }}/Release/master?logo=github&style=flat-square",
+                  "badge": "https://img.shields.io/github/actions/workflow/status/${{ env.repo_owner }}/${{ env.repo_name }}/release.yml?branch=master&logo=github&style=flat-square",
                   "alt": "build",
                   "link": "${{ env.repo_url }}/actions/workflows/release.yml"
                 },
