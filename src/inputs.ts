@@ -13,6 +13,7 @@ export namespace Inputs {
       badges: core.getInput('badges'),
       center: core.getInput('center') === 'true',
       path: core.getInput('path') || 'README.md',
+      ref:  core.getInput('ref') || 'master',
       commitMessage:
         core.getInput('commit_message') || 'docs: update badges [skip ci]',
       committerName: core.getInput('committer_name'),

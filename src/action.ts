@@ -4,11 +4,12 @@ import { Octokit } from './octokit'
 import { Badge } from './badge'
 import { Inputs } from './inputs'
 
-async function getContent(octokit: Octokit, path: string) {
+async function getContent(octokit: Octokit, path: string, ref: string) {
   try {
     return await octokit.rest.repos.getContent({
       ...github.context.repo,
       path,
+      ref,
     })
   } catch (e) {
     return null
@@ -55,7 +56,7 @@ export async function run() {
     core.debug(JSON.stringify(options, null, 2))
 
     const octokit = Octokit.get()
-    const res = await getContent(octokit, options.path)
+    const res = await getContent(octokit, options.path, options.ref)
 
     if (res == null) {
       core.setFailed(
@@ -111,6 +112,7 @@ export async function run() {
       await octokit.rest.repos.createOrUpdateFileContents({
         ...github.context.repo,
         path: options.path,
+        branch: options.ref,
         content: Buffer.from(content).toString('base64'),
         message: options.commitMessage,
         committer: {

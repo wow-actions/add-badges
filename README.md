@@ -173,6 +173,7 @@ Various inputs are defined to let you configure the action:
 | `GITHUB_TOKEN`    | The GitHub token for authentication                   | N/A                                              |
 | `badges`          | Badges to add                                         | N/A                                              |
 | `path`            | The file path to add badges                           | `'README.md'`                                    |
+| `ref`             | The branch name                                       | `'master'`                                       |
 | `center`          | Should center align the badges or not                 | `false`                                          |
 | `commit_message`  | Commit message                                        | `'docs: add badges [skip ci]'`                   |
 | `committer_name`  | The name of the author or committer of the commit.    | `'github-actions[bot]'`                          |
