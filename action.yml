@@ -12,6 +12,10 @@ inputs:
     description: Path and file name to add badges
     required: false
     default: README.md
+  ref:
+    description: The branch name. Defaults to the repository’s default branch (master)
+    required: false
+    default: master
   center:
     description: Should center align the badges
     required: false
